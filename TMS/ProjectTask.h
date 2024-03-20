@@ -5,7 +5,8 @@
 
 class ProjectTask : public Task {
 private:
-
+    string project;
+    string members[];
 public:
 
 };

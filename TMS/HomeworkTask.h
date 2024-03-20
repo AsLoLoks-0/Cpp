@@ -4,7 +4,7 @@
 
 class HomeworkTask : public Task {
 private:
-
+    string subject;
 public:
 
 };
