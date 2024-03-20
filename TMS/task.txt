@@ -1,0 +1,77 @@
+Do poćwiczenia:
+
+Treść zadania: System zarządzania zadaniami
+
+Napisz program w języku C++, który będzie symulował prosty system zarządzania zadaniami.
+W systemie tym będą istniały różne rodzaje zadań, np. zadanie projektowe i zadanie domowe.
+Każde zadanie będzie miało swoje unikalne ID, opis oraz termin wykonania.
+
+Twoim zadaniem jest zaimplementowanie klasy bazowej Task,
+która będzie reprezentować ogólne zadanie,
+oraz dwóch klas pochodnych: ProjectTask reprezentującej zadanie związane z projektem
+oraz HomeworkTask reprezentującej zadanie domowe.
+Każda z tych klas powinna mieć swoje metody wirtualne, takie jak printDetails(),
+które będą różniły się dla każdego typu zadania.
+
+Następnie stwórz klasę TaskManager, która będzie zarządzała listą zadań.
+Klasa ta powinna umożliwiać dodawanie nowych zadań,
+usuwanie zadań oraz wyświetlanie szczegółów wszystkich zadań w systemie.
+
+Wskazówki:
+
+    Użyj polimorfizmu do obsługi różnych rodzajów zadań.
+    Zadbaj o odpowiednie zarządzanie pamięcią, na przykład poprzez użycie wskaźników.
+    Stwórz prosty interfejs użytkownika, który umożliwi dodawanie, usuwanie i wyświetlanie zadań.
+
+Przykładowa interakcja:
+
+Witaj w systemie zarządzania zadaniami!
+
+1. Dodaj nowe zadanie
+2. Usuń zadanie
+3. Wyświetl wszystkie zadania
+4. Wyjście
+
+Wybierz opcję: 1
+
+Jaki rodzaj zadania chcesz dodać?
+1. Zadanie projektowe
+2. Zadanie domowe
+
+Wybierz rodzaj: 1
+
+Podaj ID zadania: 123
+Podaj opis zadania: Opracować specyfikację projektu
+Podaj termin wykonania (RRRR-MM-DD): 2024-04-15
+
+Zadanie zostało dodane pomyślnie!
+
+1. Dodaj nowe zadanie
+2. Usuń zadanie
+3. Wyświetl wszystkie zadania
+4. Wyjście
+
+Wybierz opcję: 3
+
+--- Zadania ---
+
+ID: 123
+Rodzaj: Zadanie projektowe
+Opis: Opracować specyfikację projektu
+Termin wykonania: 2024-04-15
+
+1. Dodaj nowe zadanie
+2. Usuń zadanie
+3. Wyświetl wszystkie zadania
+4. Wyjście
+
+Wybierz opcję: 4
+
+Do widzenia!
+
+To zadanie pozwoli na praktyczne zastosowanie polimorfizmu w C++ 
+poprzez hierarchię klas i różne zachowania w zależności od typu zadania.
+
+Pozdrawiam,
+
+   *
