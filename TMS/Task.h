@@ -3,6 +3,8 @@
 #include <time.h>
 #include <string>
 
+using namespace std;
+
 class Task {
 private:
     static int idProvider;
@@ -17,41 +19,17 @@ private:
 
 public:
     virtual void printDetails() = 0;
-    Task(){
-        id = generateID();
-        time_t time;
-        creationDate = localtime(&time);
-        description = "";
-        deadline = *creationDate;
-    }
-    Task(string desc, tm date){
-        id = generateID();
-        time_t time;
-        creationDate = localtime(&time);
-        description = desc;
-        deadline = date;
-    }
+    Task(){}
+    Task(string, tm){}
     ~Task(){}
 
-    int getID(){
-        return id;
-    }
-    string getDescription(){
-        return description;
-    }
-    tm getDeadline(){
-        return deadline;
-    }
-    struct tm * getCreationDate(){
-        return creationDate;
-    }
+    int getID(){}
+    string getDescription(){}
+    tm getDeadline(){}
+    struct tm * getCreationDate(){}
 
-    void setDescription(string desc){
-        description = desc;
-    }
-    void setDeadline(tm date){
-        deadline = date;
-    }   
+    void setDescription(string){}
+    void setDeadline(tm){}   
 };
 
 int Task::idProvider = 0;
