@@ -6,32 +6,32 @@
 using namespace std;
 
 class Task {
-private:
-    static int idProvider;
-    int id;
-    string description;
-    tm deadline;
-    struct tm * creationDate;
+protected:
+    static int _idProvider;
+    int _id;
+    string _description;
+    tm _deadline;
+    struct tm * _creationDate;
 
     int generateID(){
-        return idProvider++;
+        return _idProvider++;
     }
 
 public:
     virtual void printDetails() = 0;
     Task(){}
-    Task(string, tm){}
+    Task(string description, tm deadline){}
     ~Task(){}
 
-    int getID(){}
+    int getId(){}
     string getDescription(){}
     tm getDeadline(){}
     struct tm * getCreationDate(){}
 
-    void setDescription(string){}
-    void setDeadline(tm){}   
+    void setDescription(string description){}
+    void setDeadline(tm deadline){}   
 };
 
-int Task::idProvider = 0;
+int Task::_idProvider = 0;
 
 #endif

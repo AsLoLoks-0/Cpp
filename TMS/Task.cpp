@@ -1,39 +1,37 @@
 #include "Task.h"
 
-
-
 Task::Task(){
-    id = generateID();
+    _id = generateID();
     time_t time;
-    creationDate = localtime(&time);
-    description = "";
-    deadline = *creationDate;
+    _creationDate = localtime(&time);
+    _description = "";
+    _deadline = *_creationDate;
 }
-Task::Task(string desc, tm date){
-    id = generateID();
+Task::Task(string description, tm deadline){
+    _id = generateID();
     time_t time;
-    creationDate = localtime(&time);
-    description = desc;
-    deadline = date;
+    _creationDate = localtime(&time);
+    _description = description;
+    _deadline = deadline;
 }
 Task::~Task(){}
 
-int Task::getID(){
-    return id;
+int Task::getId(){
+    return _id;
 }
 string Task::getDescription() {
-    return description;
+    return _description;
 }
 tm Task::getDeadline(){
-    return deadline;
+    return _deadline;
 }
 struct tm * Task::getCreationDate(){
-    return creationDate;
+    return _creationDate;
 }
 
-void Task::setDescription(string desc){
-    description = desc;
+void Task::setDescription(string description){
+    _description = description;
 }
-void Task::setDeadline(tm date){
-    deadline = date;
+void Task::setDeadline(tm deadline){
+    _deadline = deadline;
 }

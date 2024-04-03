@@ -4,8 +4,14 @@
 
 class HomeworkTask : public Task {
 private:
-    string subject;
+    string _subject;
 public:
+    HomeworkTask() : Task() {}
+    HomeworkTask(string description, tm deadline, string subject) : Task(description, deadline) {}
+    ~HomeworkTask() {}
+    void printDetails() override;
+    string getSubject() {}
+    void setSubject(string subject) {}
 
 };
 #endif
