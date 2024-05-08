@@ -19,6 +19,7 @@ https://zs10zabrze.mobidziennik.pl/dziennik/wiadodebrana/?id=1058102
 Napisz program w C++, który umożliwia zarządzanie książkami w bibliotece
 20 marca 2024
 ;
+In progres
 https://zs10zabrze.mobidziennik.pl/dziennik/wiadodebrana/?id=1057954
 Task
 20 marca 2024
