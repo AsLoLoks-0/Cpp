@@ -1,0 +1,25 @@
+https://zs10zabrze.mobidziennik.pl/dziennik/wiadodebrana/?id=1077813
+dwa zadania
+Algorytm Euklidesa z doejmowaniem
+wyszukiwanie binarne
+8 maja 2024
+;
+https://zs10zabrze.mobidziennik.pl/dziennik/wiadodebrana/?id=1071110
+zadanieegzaminacyjnemetody statyczne
+programkonsolowy opsugujocy strinkg
+19 kwietnia 2024
+;
+https://zs10zabrze.mobidziennik.pl/dziennik/wiadodebrana/?id=1070251
+dwa zadania
+sortowanie przez wybieranie
+przezukiwanie tablicy z wartownikiem
+17 kwietnia 2024
+;
+https://zs10zabrze.mobidziennik.pl/dziennik/wiadodebrana/?id=1058102
+Napisz program w C++, który umożliwia zarządzanie książkami w bibliotece
+20 marca 2024
+;
+https://zs10zabrze.mobidziennik.pl/dziennik/wiadodebrana/?id=1057954
+Task
+20 marca 2024
+;
