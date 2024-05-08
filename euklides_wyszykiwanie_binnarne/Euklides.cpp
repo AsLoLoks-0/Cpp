@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int nwd_subtract(int a, int b){
+int nwdSubtract(int a, int b){
    while (a != b)
    {
     if(a > b)
@@ -13,7 +13,7 @@ int nwd_subtract(int a, int b){
    return a;
 }
 
-int nwd_divide(int a, int b){
+int nwdDivide(int a, int b){
     int temp = 0;
    while (b != 0)
    {
