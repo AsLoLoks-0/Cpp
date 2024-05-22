@@ -4,14 +4,14 @@
 
 class HomeworkTask : public Task {
 private:
-    string _subject;
+    std::string _subject;
 public:
-    HomeworkTask() : Task() {}
-    HomeworkTask(string description, tm deadline, string subject) : Task(description, deadline) {}
+    HomeworkTask() : Task(){}
+    HomeworkTask(std::string description, tm deadline, std::string subject) : Task(description, deadline) {}
     ~HomeworkTask() {}
-    void printDetails() override;
-    string getSubject() {}
-    void setSubject(string subject) {}
+    void printDetails(){};
+    std::string getSubject() const { return _subject; }
+    void setSubject(std::string subject);
 
 };
 #endif

@@ -11,21 +11,21 @@ ProjectTask::ProjectTask(string description, tm deadline, string project, vector
   _project = project;
   _members = members;
 }
-ProjectTask::~ProjectTask() {}
+ProjectTask::~ProjectTask(){}
 
-void ProjectTask::printDetails() {
-  cout << "Description: " << _description << endl;
-  cout << "Deadline: " << asctime(&_deadline) << endl;
-  cout << "Creation date: " << asctime(_creationDate) << endl;
-  cout << "ID: " << _id << endl;
-  cout << "Project: " << _project << endl;
-  cout << "Members: " << endl;
-  for (string member : _members) {
-    cout << member << endl;
-  }
-}
-string ProjectTask::getProject() { return _project; }
-vector<string> ProjectTask::getMembers() { return _members; }
+
+//FIXME: Same as in homework task class
+// void ProjectTask::printDetails() {
+//   cout << "Description: " << _description << endl;
+//   cout << "Deadline: " << asctime(&_deadline) << endl;
+//   cout << "Creation date: " << asctime(_creationDate) << endl;
+//   cout << "ID: " << _id << endl;
+//   cout << "Project: " << _project << endl;
+//   cout << "Members: " << endl;
+//   for (string member : _members) {
+//     cout << member << endl;
+//   }
+// }
 
 void ProjectTask::setProject(string project) { _project = project; }
 void ProjectTask::setMembers(vector<string> members) { _members = members; }

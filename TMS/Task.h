@@ -2,14 +2,15 @@
 #define TASK_H
 #include <time.h>
 #include <string>
+#include <iostream>
 
-using namespace std;
+
 
 class Task {
 protected:
     static int _idProvider;
     int _id;
-    string _description;
+    std::string _description;
     tm _deadline;
     struct tm * _creationDate;
 
@@ -18,18 +19,18 @@ protected:
     }
 
 public:
-    virtual void printDetails() = 0;
+    virtual void printDetails(){ std::cout<<"Virtual function" << std::endl;}
     Task(){}
-    Task(string description, tm deadline){}
+    Task(std::string description, tm deadline){}
     ~Task(){}
 
-    int getId(){}
-    string getDescription(){}
-    tm getDeadline(){}
-    struct tm * getCreationDate(){}
+    int getId() const {return _id;}
+    std::string getDescription() const {return _description;}
+    tm getDeadline() const {return _deadline;}
+    struct tm * getCreationDate() const {return _creationDate;}
 
-    void setDescription(string description){}
-    void setDeadline(tm deadline){}   
+    void setDescription(std::string description);
+    void setDeadline(tm deadline);
 };
 
 int Task::_idProvider = 0;

@@ -1,5 +1,7 @@
 #include "Task.h"
 
+using namespace std;
+
 Task::Task(){
     _id = generateID();
     time_t time;
@@ -15,19 +17,6 @@ Task::Task(string description, tm deadline){
     _deadline = deadline;
 }
 Task::~Task(){}
-
-int Task::getId(){
-    return _id;
-}
-string Task::getDescription() {
-    return _description;
-}
-tm Task::getDeadline(){
-    return _deadline;
-}
-struct tm * Task::getCreationDate(){
-    return _creationDate;
-}
 
 void Task::setDescription(string description){
     _description = description;
