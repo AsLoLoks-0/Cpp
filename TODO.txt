@@ -9,11 +9,6 @@ Algorytm Euklidesa z odejmowaniem
 wyszukiwanie binarne
 8 maja 2024
 ;
-https://zs10zabrze.mobidziennik.pl/dziennik/wiadodebrana/?id=1071110
-zadanie egzaminacyjne metody statyczne
-program konsolowy obsługujacy stringi
-19 kwietnia 2024
-;
 https://zs10zabrze.mobidziennik.pl/dziennik/wiadodebrana/?id=1070251
 dwa zadania
 sortowanie przez wybieranie
