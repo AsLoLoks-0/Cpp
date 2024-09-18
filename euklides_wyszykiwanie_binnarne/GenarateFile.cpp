@@ -54,7 +54,7 @@ int main() {
     int (*csvColumnsValues[])() = {randomNumber, randomNumber};
     int size = sizeof(csvColumnsValues) / sizeof(csvColumnsValues[0]);
 
-    createFile(csvColumnsValues, size, "nwdSpeedTestValues.csv", 10);
+    createFile(csvColumnsValues, size, "nwdSpeedTestValues.csv", 1000000);
 
     return 0;
 }

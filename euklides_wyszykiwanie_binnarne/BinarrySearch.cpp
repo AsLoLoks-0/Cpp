@@ -82,7 +82,7 @@ int main() {
         binarySearch(test_elements, target_value);
         clock_t end = clock();
 
-        double elapsed_time = double(end - start) / CLOCKS_PER_SEC;
+        double elapsed_time = double(end - start);
         cout << "Czas wyszukiwania dla " << size << " elementów: " << elapsed_time << " sekund" << endl;
     }
 
