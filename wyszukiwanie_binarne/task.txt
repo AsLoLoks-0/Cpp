@@ -1,0 +1,17 @@
+Zadanie – wyszukiwanie binarne
+Opis algorytmu np. tu: https://l.wikipedia.org/wiki/Wyszukiwanie_binarne
+Program ma podejmować czytelną interakcję z użytkownikiem,
+ma być zapisany czytelnie, zgodnie z zasadami clean code,
+nazwy funkji (metod)
+oraz zmiennych muszą być znaczące (np. nazwa tablica, 
+albo wektor NIE są znaczące).
+Wylosuj wartości w zakresie 0-1000, wpisz je do struktury uporządkowanej,
+następnie zastosuj algorytm wyszukiwania binarnego 
+do znalezienia konkretnej wartości.
+Przetestuj dla bardzo dużych zbiorów np. ponad milion elementów.
+Jako rozszerzenie zadania wylosowane wartości wpisuj 
+(w sposób uporządkowany!) do pliku tekstowego 
+i wyszukuj wartości z tego pliku.
+Możesz znacząco (np. milion razy) zwiększać ilość danych w pliku,
+sprawdzając czas
+wyszukiwania.

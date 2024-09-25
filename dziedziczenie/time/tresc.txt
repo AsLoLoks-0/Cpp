@@ -1,9 +1,0 @@
-Zdefiniować klasę Czas zawierającą pola prywatne: int godzina, int minuta, int sekunda.
- Klasa powinna zawierać funkcje dostępowe, pobierające zawartość poszczególnych pól (np. podajGodzine itd.),
-  oraz funkcje pozwalające na ustalanie zawartości pól (np. ustawGodzine, itd.). Klasa ma posiadać konstruktor domyślny zerujący wszystkie pola,
-   oraz konstruktor ogólny, otrzymujący trzy parametry, trafiające odpowiednio do pól opisujących godzinę, minutę, sekundę.
-Funkcje ustawiania wartości mogą w tej wersji nie kontrolować poprawności parametrów wstawianych do pól.
-Proszę zdefiniować klasę pochodną klasy Czas — CzasZKontrolą. W klasie tej należy dokonać redefinicji funkcji ustawiających wartości pól (ustawGodzine, itd.),
- tak aby dokonywały kontroli wartości parametrów, adekwatnie dla charakteru pola. Klasa CzasZKontrolą powinna posiadać konstruktor domyślny zerujący wszystkie pola,
-  oraz konstruktor ogólny, otrzymujący trzy parametry, trafiające odpowiednio do pól opisujących godzinę, minutę, sekundę.
- Proszę pamiętać o aktywowaniu konstruktorów klasy bazowej.
