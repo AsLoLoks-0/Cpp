@@ -6,9 +6,12 @@
 //https://pl.wikipedia.org/wiki/Wyszukiwanie_binarne
 using namespace std;
 
-void populateSetWithRandomValuse(set<int>* dataSet, int maxRange, int size) {
+//*variable->method() should be a shortcut for (*variable).method() but it doesn't work (my windows and linux)
+
+void populateSetWithRandomValues(set<int>* dataSet, int maxRange, int size) {
     for(int i = 0; i < size; i++){
         (*dataSet).insert(rand() % (maxRange + 1));
+        //*dataSet->insert(rand() % (maxRange + 1)); // no match for 'operator*' (operand type is 'std::pair<std::_Rb_tree_const_iterator<int>, bool>')
     }
 }
 void printOutSet(set<int>* dataSet){
@@ -18,24 +21,46 @@ void printOutSet(set<int>* dataSet){
     }
 }
 
-void convertSetToArray(int* arrayToConvertTo[], set<int>* setToGetDataFrom){
-    set<int>::iterator itr;
-    int i = 0;
-    for (itr = (*setToGetDataFrom).begin(); itr != (*setToGetDataFrom).end(); itr++) {
-        *arrayToConvertTo[i] = *itr;
-        i++;
+void advanceIteratorBy(set<int>::iterator itr, int amount) {
+    if(amount > 0){
+        for(int i = 0; i < amount; i++){
+            itr++;
+        }
+        return;
+    }
+    for(int i = 0; i < amount; i++){
+        itr--;
     }
 }
-
-
-// int binarySearch(int* dataSet, int target){
+void advanceIteratorBy(set<int>::iterator itr, int amount, auto container) {
+    if(amount > 0){
+        for(int i = 0; i < amount; i++){
+            itr++;
+            if(itr == container.end())
+                cout << "Iterator went out of bounds, end crossed" << endl;
+        }
+        return;
+    }
+    for(int i = 0; i < amount; i++){
+        itr--;
+        if(itr == container.begin())
+            cout << "Iterator went out of bounds, begin crossed" << endl;
+    }
+}
+void setIteratorTo(set<int>::iterator itr, int position) {
+    
+}
+void setIteratorTo(set<int>::iterator itr, int position, bool closerToIteratorEnd) {
+    
+}
+// int binarySearch(set<int>* dataSet, int target){
 //     int left = 0;
-//     int right = *dataSet.size() - 1;
+//     int right = dataSet->size() - 1;
 //     int searchedIndex;
 //     while (left <= right)
 //     {
 //         searchedIndex = floor((left + right) / 2);
-//         if((*dataSet).[searchedIndex])
+//         // if((*dataSet).[searchedIndex])
 //     }
     
 
@@ -45,20 +70,8 @@ int main() {
 
     srand(time(NULL));
     set<int> dataSetSet;
-    populateSetWithRandomValuse(&dataSetSet, 999, 100);
+    populateSetWithRandomValues(&dataSetSet, 999, 100);
     printOutSet(&dataSetSet);
-    int dataSetArray[dataSetSet.size()];
-    int table[3] = {1,2,3};
-    convertSetToArray(&dataSetArray, &dataSetSet);
-    // set<int>::iterator itr;
-    // int i = 0;
-    // for (itr = dataSetSet.begin(); itr != dataSetSet.end(); itr++) {
-    //     dataSetArray[i] = *itr;
-    //     i++;
-    // }
-    cout<<*dataSetArray[1];
-
-
 
     
     return 0;
